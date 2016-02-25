@@ -34,7 +34,7 @@ if n == m:
 	w = w.round(4)
 	B = B.round(4)
 	for i in range(0, len(w)):
-		print "$$\\alpha\_{%d} = %s, \\lambda\_{%d} = %s$$\n\n" % (i + 1, str(w[i]), i + 1, to_latex_bmatrix(B[:, i]))
+		print "$$\\lambda\_{%d} = %s, \\alpha\_{%d} = %s$$\n\n" % (i + 1, str(w[i]), i + 1, to_latex_bmatrix(B[:, i]))
 else:
 	print "$$%s 不是方阵！$$\n\n" % (to_latex_bmatrix(A))
 sys.exit(0)
